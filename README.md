@@ -1,0 +1,1 @@
+Se incluye lo solicitado sobre el desafio , se agrega sobre la ui de datos la opcion para ver lo que devuelve al front segun las actividades realizadas.

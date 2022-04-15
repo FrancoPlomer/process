@@ -1,0 +1,65 @@
+<div class="container text-center my-3">
+    <div class="jumbotron" style="background-color: green;color: white;">
+        <h1>USER OK LOGIN!</h1>
+        <h2><i>Bienvenido {{datos.user}}</i></h2>
+        <br>
+        <h3>dirección: {{datos.adress}}</h3>
+        <form class="bg-success p-2 text-dark bg-opacity-25" id="formInfoSystem">
+        <button type="submit" class="btn btn-primary">Consultar informacion del sistema</button>
+        </form>
+        <ul class="containerInfoSystem">
+            <li id="entryData"></li>
+            <li id="operativeSystem"></li>
+            <li id="nodeVersion"></li>
+            <li id="rss"></li>
+            <li id="execPath"></li>
+            <li id="pid"></li>
+            <li id="fileProyect"></li>
+        </ul>
+        <form class="bg-success p-2 text-dark bg-opacity-25" id="aleatoryNumber">
+            <input name="cantidad" type="number" class="form-control" id="cantidadSeleccionada">
+            <button type="submit" class="btn btn-primary">Generar numeros aleatorios</button>
+            <div id="containerAleatory">
+            </div>
+        </form>
+        <button class="btn btn-danger my-5" onclick="location.href='/logout'">LOGOUT</button>
+    </div>
+</div>
+<form class="bg-success p-2 text-dark bg-opacity-25" id="formProduct">
+    <button type="submit" class="btn btn-primary">Generar producto</button>
+</form>
+<table class="table bg-primary p-2 text-light">
+    <thead>
+        <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">precio</th>
+        <th scope="col">imagen</th>
+        </tr>
+    </thead>
+    <tbody id="contentTable">
+
+    </tbody>
+</table>
+    <div class="mainContainer_Messages">
+        <h2 class="bg-success p-2 text-dark bg-opacity-25">Centro de mensajes</h2>
+        <form class="bg-success p-2 text-dark bg-opacity-25" id="formUser">
+            <div class="mb-3">
+                <label for="usuario" class="form-label">Nombre de usuario</label>
+                <input name="usuario" type="text" class="form-control" id="nombreUsuario" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+        <div id="contentMessages">
+            <div id="contentMessages_body">
+
+            </div>
+            <form class="bg-success p-2 text-dark bg-opacity-25" id="formMessage">
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <input name="mensaje" type="text" class="form-control" id="mensajeUsuario" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
